@@ -1,0 +1,28 @@
+Para hacer funcionar el proyecto debe configurar las siguientes opciones
+
+1.- ir a la siguiente ruta: C:\xampp\htdocs\chat\app\script\config
+abrir el archivo config.php debe quedar de la siguiente manera (nota: es importante que este proyecto se guarde dentro de una carpeta llamada chat para que pueda funcionar correctamente)
+
+$config["script_url"] = "/chat/app/";  // esta es la ruta al framework utilizado este proyecto se creó en laravel con un framewrok adicional integrado llamado pdocrud que ahorra mucho tiempo de desarrollo se integró con un helper
+
+$config["hostname"] =  "localhost";
+
+$config["database"] = "nombre de la base de datos"; 
+
+$config["username"] = "nombre usuario de la base de datos";
+
+$config["password"] = "contraseña de la base de datos";
+
+2.- conectar tambien la base de datos en el archivo .env de laravel
+
+3.- cargar la base de datos
+
+4.- ejecutar directamente por la siguiente url: http://localhost/chat/login sin ejecutar php artisan serve
+
+5.- las credenciales para hacer las pruebas de chat son las siguientes:
+
+usuario: demo@demo.cl
+contraseña: 12345678
+
+usuario: pedro@demo.cl
+contraseña: 12345678
